@@ -90,5 +90,59 @@ int main()
         printf("%d\n", luckyNumbers[k]);
     }
 
+ /* 2D Arrays & Nested Loops */
+
+    int nums[3][2] = {
+                    {1, 2},
+                    {3, 4},
+                    {5, 6}
+                    };
+    printf("%d \n", nums[1][1]);
+
+    int I, J;
+    for(I = 0; I < 3; I++){
+        for(J = 0; J < 2; J++){
+            printf("%d, ", nums[I][J]);
+        }
+        printf("\n");
+    }
+
+
+
+
+
+/* Memory Addresses */
+    int edad = 30;
+    double promedio = 3.4;
+    char calif = 'A';
+/*Place where C stores value in hexadecimal */
+    printf("edad: %p\npromedio: %p\ncalif: %p", &edad, &promedio, &calif);
+
+/* Pointer is a type of data that refers to a Memory Addresses */
+    printf("edad memory address: %p\n", &edad);
+/* Direccion de memoria */
+    int * pointeredad = &edad;
+    double * pointerpromedio = &promedio;
+    char * pointercalif = &calif;
+
+/*  WRITING Files "w" Overwrites the file, "a" for append
+
+    char line[255];
+
+    FILE * fpointer = fopen("employees.txt", "w");
+
+    fprintf(fpointer, "Jim, Salesman\nPam, Receptionist\nOscar, Accounting");
+
+    fgets(line, 255, fpointer);
+    fgets(line, 255, fpointer); 2nd line of the file
+    printf("%s", line);
+
+    fclose(fpointer)
+
+    READ Files
+
+
+ */
+
     return 0;
 }
